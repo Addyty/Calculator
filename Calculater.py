@@ -32,7 +32,8 @@ if __name__ == "__main__":
   gui.configure(background="thistle2")
   # set the title
   gui.title("Calculator")
-  gui.geometry("224x314")
+  gui.geometry("265x390")
+  gui.resizable(width= False, height= False)
   equation = StringVar()
   Entry(gui, relief=RIDGE, textvariable=equation,justify='right', bd=8, bg="thistle2").grid(row=0,column=0,columnspan=4,ipadx=43,ipady=10)
   equation.set('')
@@ -85,6 +86,7 @@ if __name__ == "__main__":
   clear = Button(gui, text='Clear', fg='Black', bg='AntiqueWhite2',
         command=clear, height=3, width=7,relief="groove")
   clear.grid(row=5, column='1')
-  name = Label(gui, text="Powered By Addy Developer", fg='Black', bg='thistle2',width=31,height=2,relief="groove").place(x = 0, y = 278)
-  #RUN
+
+  name = Label(gui, text="Developed by Addy", fg='Black', bg='thistle2',width=33,height=2,relief="groove").place(x = 0, y = 340)
+
   gui.mainloop()
